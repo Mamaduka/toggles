@@ -1,0 +1,12 @@
+{
+	"name": "mamaduka/toggles",
+	"category": "common",
+	"attributes": {
+		"summary": {
+			"type": "string",
+			"source": "html",
+			"selector": "summary",
+			"default": ""
+		}
+	}
+}
