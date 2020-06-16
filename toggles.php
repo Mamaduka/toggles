@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Toggles
  * Plugin URI:        https://github.com/Mamaduka/toggles
- * Description:
+ * Description:       A simple block to hide and reveal content.
  * Version:           1.0.0
  * Requires at least: 5.3
  * Requires PHP:      5.6

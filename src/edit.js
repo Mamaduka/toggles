@@ -3,10 +3,7 @@
  */
 import { InnerBlocks, RichText } from '@wordpress/block-editor';
 
-export default function TogglesEdit( {
-	attributes,
-	setAttributes,
-} ) {
+export default function TogglesEdit( { attributes, setAttributes } ) {
 	return (
 		<details className="wp-block-toggles">
 			<RichText

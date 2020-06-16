@@ -1,7 +1,7 @@
 {
 	"name": "mamaduka-toggles",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A simple block to hide and reveal content.",
 	"author": "George Mamadashvili",
 	"license": "GPL-2.0-or-later",
 	"keywords": [

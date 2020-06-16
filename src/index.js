@@ -14,7 +14,7 @@ const { name, category, attributes } = metadata;
 
 registerBlockType( name, {
 	title: 'Toggles',
-	description: '',
+	description: 'A simple block to hide and reveal content.',
 	keywords: [ 'toggle', 'accordion', 'faq' ],
 	supports: {
 		html: false,
