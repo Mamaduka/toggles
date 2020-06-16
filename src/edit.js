@@ -15,7 +15,9 @@ export default function TogglesEdit( { attributes, setAttributes } ) {
 				keepPlaceholderOnFocus={ true }
 			/>
 			<div className="wp-block-toggles__content">
-				<InnerBlocks />
+				<InnerBlocks
+					renderAppender={ () => <InnerBlocks.ButtonBlockAppender /> }
+				/>
 			</div>
 		</details>
 	);
