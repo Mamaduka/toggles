@@ -34,7 +34,7 @@ function register_block() {
 	);
 
 	register_block_type( 'mamaduka/toggles', [
-		'editor_script'   => 'toggles-editor',
+		'editor_script' => 'toggles-editor',
 	] );
 }
 add_action( 'init', __NAMESPACE__ . '\\register_block' );
