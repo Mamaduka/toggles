@@ -33,8 +33,16 @@ function register_block() {
 		$asset_file['version']
 	);
 
+	wp_register_style(
+		'toggles-editor-style',
+		plugins_url( 'build/index.css', __FILE__ ),
+		[],
+		$asset_file['version']
+	);
+
 	register_block_type( 'mamaduka/toggles', [
-		'editor_script' => 'toggles-editor',
+		'editor_script'   => 'toggles-editor',
+		'editor_style'    => 'toggles-editor-style',
 	] );
 }
 add_action( 'init', __NAMESPACE__ . '\\register_block' );
