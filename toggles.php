@@ -20,29 +20,6 @@ namespace Mamaduka\Toggles;
  * @return void
  */
 function register_block() {
-	$asset_filepath = __DIR__ . '/build/index.asset.php';
-	$asset_file     = file_exists( $asset_filepath ) ? include $asset_filepath : [
-		'dependencies' => [],
-		'version'      => false,
-	];
-
-	wp_register_script(
-		'toggles-editor',
-		plugins_url( 'build/index.js', __FILE__ ),
-		$asset_file['dependencies'],
-		$asset_file['version']
-	);
-
-	wp_register_style(
-		'toggles-editor-style',
-		plugins_url( 'build/index.css', __FILE__ ),
-		[],
-		$asset_file['version']
-	);
-
-	register_block_type( 'mamaduka/toggles', [
-		'editor_script'   => 'toggles-editor',
-		'editor_style'    => 'toggles-editor-style',
-	] );
+	register_block_type_from_metadata( __DIR__ );
 }
 add_action( 'init', __NAMESPACE__ . '\\register_block' );

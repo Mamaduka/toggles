@@ -10,20 +10,24 @@ import './index.scss';
 import icon from './icon';
 import edit from './edit';
 import save from './save';
-import metadata from './block.json';
 
-const { name, category, attributes } = metadata;
-
-registerBlockType( name, {
+registerBlockType( 'mamaduka/toggles', {
 	title: 'Toggles',
 	description: 'A simple block to hide and reveal content.',
+	category: [ 'common' ],
+	icon,
 	keywords: [ 'toggle', 'accordion', 'faq' ],
+	attributes: {
+		summary: {
+			type: 'string',
+			source: 'html',
+			selector: 'summary',
+			default: '',
+		},
+	},
 	supports: {
 		html: false,
 	},
-	icon,
-	category,
-	attributes,
 	edit,
 	save,
 } );
