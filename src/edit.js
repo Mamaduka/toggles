@@ -1,7 +1,7 @@
 /**
  * WordPress dependencies
  */
-import { InnerBlocks, RichText } from '@wordpress/block-editor';
+import { BlockControls, InnerBlocks, RichText } from '@wordpress/block-editor';
 
 export default function TogglesEdit( { attributes, setAttributes } ) {
 	// This is called onKeyUp on <details> and cancel default behavior.
@@ -13,13 +13,15 @@ export default function TogglesEdit( { attributes, setAttributes } ) {
 
 	return (
 		<>
+			<BlockControls />
+
 			{ /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */ }
 			<details className="wp-block-toggles" onKeyUp={ cancelSpaceToggle }>
 				<summary>
 					<RichText
 						tagName="span"
 						value={ attributes.summary }
-						allowedFormats={ [] }
+						allowedFormats={ [ 'core/bold', 'core/italic' ] }
 						onChange={ ( summary ) => setAttributes( { summary } ) }
 						placeholder="Toggle"
 						keepPlaceholderOnFocus={ true }
@@ -27,7 +29,9 @@ export default function TogglesEdit( { attributes, setAttributes } ) {
 				</summary>
 				<div className="wp-block-toggles__content">
 					<InnerBlocks
-						renderAppender={ () => <InnerBlocks.ButtonBlockAppender /> }
+						renderAppender={ () => (
+							<InnerBlocks.ButtonBlockAppender />
+						) }
 					/>
 				</div>
 			</details>
