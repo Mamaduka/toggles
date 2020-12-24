@@ -12,23 +12,25 @@ export default function TogglesEdit( { attributes, setAttributes } ) {
 	}
 
 	return (
-		/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-		<details className="wp-block-toggles" onKeyUp={ cancelSpaceToggle }>
-			<summary>
-				<RichText
-					tagName="span"
-					value={ attributes.summary }
-					allowedFormats={ [] }
-					onChange={ ( summary ) => setAttributes( { summary } ) }
-					placeholder="Toggle"
-					keepPlaceholderOnFocus={ true }
-				/>
-			</summary>
-			<div className="wp-block-toggles__content">
-				<InnerBlocks
-					renderAppender={ () => <InnerBlocks.ButtonBlockAppender /> }
-				/>
-			</div>
-		</details>
+		<>
+			{ /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */ }
+			<details className="wp-block-toggles" onKeyUp={ cancelSpaceToggle }>
+				<summary>
+					<RichText
+						tagName="span"
+						value={ attributes.summary }
+						allowedFormats={ [] }
+						onChange={ ( summary ) => setAttributes( { summary } ) }
+						placeholder="Toggle"
+						keepPlaceholderOnFocus={ true }
+					/>
+				</summary>
+				<div className="wp-block-toggles__content">
+					<InnerBlocks
+						renderAppender={ () => <InnerBlocks.ButtonBlockAppender /> }
+					/>
+				</div>
+			</details>
+		</>
 	);
 }
