@@ -17,17 +17,6 @@ registerBlockType( 'mamaduka/toggles', {
 	category: [ 'common' ],
 	icon,
 	keywords: [ 'toggle', 'accordion', 'faq' ],
-	attributes: {
-		summary: {
-			type: 'string',
-			source: 'html',
-			selector: 'summary',
-			default: '',
-		},
-	},
-	supports: {
-		html: false,
-	},
 	edit,
 	save,
 } );
