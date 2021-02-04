@@ -48,10 +48,10 @@ export default function TogglesEdit( {
 					<RichText
 						tagName="span"
 						value={ attributes.summary }
-						allowedFormats={ [ 'core/bold', 'core/italic' ] }
 						onChange={ ( summary ) => setAttributes( { summary } ) }
-						placeholder="Toggle"
-						keepPlaceholderOnFocus={ true }
+						placeholder="Toggle title"
+						keepPlaceholderOnFocus
+						allowedFormats={ [ 'core/bold', 'core/italic' ] }
 					/>
 				</summary>
 				<div className="wp-block-toggles__content">
