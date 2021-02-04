@@ -7,6 +7,7 @@ import {
 	useBlockProps,
 	RichText,
 } from '@wordpress/block-editor';
+import { SPACE } from '@wordpress/keycodes';
 
 export default function TogglesEdit( { attributes, setAttributes } ) {
 	const blockProps = useBlockProps( {
@@ -15,7 +16,7 @@ export default function TogglesEdit( { attributes, setAttributes } ) {
 
 	// This is called onKeyUp on <details> and cancel default behavior.
 	function cancelSpaceToggle( event ) {
-		if ( event.keyCode === 32 ) {
+		if ( event.keyCode === SPACE ) {
 			event.preventDefault();
 		}
 	}
