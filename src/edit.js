@@ -7,6 +7,7 @@ import {
 	useBlockProps,
 	RichText,
 } from '@wordpress/block-editor';
+import { __ } from '@wordpress/i18n';
 import { useSelect } from '@wordpress/data';
 import { SPACE } from '@wordpress/keycodes';
 
@@ -49,9 +50,10 @@ export default function TogglesEdit( {
 						tagName="span"
 						value={ attributes.summary }
 						onChange={ ( summary ) => setAttributes( { summary } ) }
-						placeholder="Toggle title"
+						placeholder={ __( 'Write a title…', 'toggles' ) }
 						keepPlaceholderOnFocus
 						allowedFormats={ [ 'core/bold', 'core/italic' ] }
+						aria-label={ __( "Toggle's title", 'toggles' ) }
 					/>
 				</summary>
 				<div className="wp-block-toggles__content">

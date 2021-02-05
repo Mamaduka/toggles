@@ -2,6 +2,7 @@
  * WordPress dependencies
  */
 import { registerBlockType } from '@wordpress/blocks';
+import { __ } from '@wordpress/i18n';
 
 /**
  * Internal dependencies
@@ -12,11 +13,11 @@ import edit from './edit';
 import save from './save';
 
 registerBlockType( 'mamaduka/toggles', {
-	title: 'Toggles',
-	description: 'A simple block to hide and reveal content.',
+	title: __( 'Toggles', 'toggles' ),
+	description: __( 'A simple block to hide and reveal content.', 'toggles' ),
 	category: [ 'common' ],
 	icon,
-	keywords: [ 'toggle', 'accordion', 'faq' ],
+	keywords: [ 'accordion', 'details', 'faq' ],
 	edit,
 	save,
 } );
