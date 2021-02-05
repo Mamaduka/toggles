@@ -6,6 +6,7 @@ import { InnerBlocks, useBlockProps, RichText } from '@wordpress/block-editor';
 export default function save( { attributes } ) {
 	const blockProps = useBlockProps.save( {
 		className: 'wp-block-toggles',
+		open: attributes.defaultOpen,
 	} );
 
 	return (
