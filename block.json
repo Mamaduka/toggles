@@ -12,6 +12,10 @@
 			"source": "html",
 			"selector": "summary",
 			"default": ""
+		},
+		"defaultOpen": {
+			"type": "boolean",
+			"default": false
 		}
 	},
 	"supports": {
