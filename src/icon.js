@@ -5,8 +5,7 @@ import { Path, SVG } from '@wordpress/components';
 
 const icon = (
 	<SVG xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-		<Path d="M0 0h24v24H0V0z" fill="none" />
-		<Path d="M8 5v14l11-7L8 5z" />
+		<Path d="M4 20h9v-1.5H4V20zm0-5.5V16h16v-1.5H4zM4 4v8l7-4-7-4z" />
 	</SVG>
 );
 
