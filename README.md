@@ -13,15 +13,15 @@ The block uses `<details>` and `<summary>` HTML elements and doesn't require any
 
 ```CSS
 .wp-block-toggles {
-	background: #fafafa;
-	border: 1px solid #eaeaea;
-	border-radius: 3px;
-	margin: 1.5rem 0;
-	padding: 0.5rem 1rem;
+    background: #fafafa;
+    border: 1px solid #eaeaea;
+    border-radius: 3px;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1rem;
 }
 
 .wp-block-toggles summary {
-	cursor: pointer;
+    cursor: pointer;
 }
 ```
 
