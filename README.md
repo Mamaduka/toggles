@@ -9,7 +9,9 @@ The block uses `<details>` and `<summary>` HTML elements and doesn't require any
 ## Frequently Asked Questions ## 
 
 <details>
-<summary>What to change default styles?</summary>
+<summary>Want to change default styles?</summary>
+
+You can add some basic styling with just a few lines of CSS. Example:
 
 ```CSS
 .wp-block-toggles {

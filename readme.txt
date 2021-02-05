@@ -18,9 +18,9 @@ The block uses `<details>` and `<summary>` HTML elements and doesn't require any
 
 == Frequently Asked Questions ==
 
-= What to change default styles? =
+= Want to change default styles? =
 
-Yes, you can add some basic styling with just a few lines of CSS. Example:
+You can add some basic styling with just a few lines of CSS. Example:
 
 `
 .wp-block-toggles {
