@@ -14,7 +14,7 @@ import save from './save';
 
 registerBlockType( 'mamaduka/toggles', {
 	title: __( 'Toggles', 'toggles' ),
-	description: __( 'A simple block to hide and reveal content.', 'toggles' ),
+	description: __( 'An easy way to hide and reveal content.', 'toggles' ),
 	category: [ 'common' ],
 	icon,
 	keywords: [ 'accordion', 'details', 'faq' ],

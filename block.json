@@ -4,8 +4,8 @@
 	"title": "Toggles",
 	"category": "common",
 	"icon": "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' fill='black' viewBox='0 0 24 24'><path d='M0 0h24v24H0V0z' fill='none'/><path d='M8 5v14l11-7L8 5z'/></svg>",
-	"description": "A simple block to hide and reveal content.",
-	"keywords": [ "toggle", "accordion", "faq" ],
+	"description": "An easy way to hide and reveal content.",
+	"keywords": [ "accordion", "details", "faq" ],
 	"attributes": {
 		"summary": {
 			"type": "string",

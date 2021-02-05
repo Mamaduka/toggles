@@ -1,3 +1,3 @@
 # Toggles
 
-A simple block to hide and reveal content.
+An easy way to hide and reveal content.
