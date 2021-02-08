@@ -31,14 +31,14 @@ export default function TogglesEdit( {
 	} );
 
 	// Don't toggle open value on space.
-	function keyUpListener( event ) {
+	function catchKeyUpEvent( event ) {
 		if ( event.keyCode === SPACE ) {
 			event.preventDefault();
 		}
 	}
 
 	// Don't toggle open value on click.
-	function clickListeer( event ) {
+	function catchClickEvent( event ) {
 		event.preventDefault();
 	}
 
@@ -59,7 +59,10 @@ export default function TogglesEdit( {
 			</InspectorControls>
 
 			<details { ...blockProps }>
-				<summary onKeyUp={ keyUpListener } onClick={ clickListeer }>
+				<summary
+					onKeyUp={ catchKeyUpEvent }
+					onClick={ catchClickEvent }
+				>
 					<RichText
 						tagName="span"
 						value={ attributes.summary }
