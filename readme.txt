@@ -44,6 +44,7 @@ Create an issue at the [Mamaduka/toggles](https://github.com/Mamaduka/toggles) r
 
 1. The block with no styles.
 2. The block with custom styling.
+3. Block Editor.
 
 == Changelog ==
 
