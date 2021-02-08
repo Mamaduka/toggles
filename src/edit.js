@@ -70,7 +70,7 @@ export default function TogglesEdit( {
 						placeholder={ __( 'Write a title…', 'toggles' ) }
 						keepPlaceholderOnFocus
 						allowedFormats={ [ 'core/bold', 'core/italic' ] }
-						aria-label={ __( "Toggle's title", 'toggles' ) }
+						aria-label={ __( 'Toggle title', 'toggles' ) }
 					/>
 				</summary>
 				<div className="wp-block-toggles__content">
