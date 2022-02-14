@@ -3,7 +3,7 @@ Contributors: mamaduka
 Tags: accordion, faq, details, block, blocks
 Requires at least: 5.8
 Tested up to: 5.9
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,10 @@ Create an issue at the [Mamaduka/toggles](https://github.com/Mamaduka/toggles) r
 3. Block Editor.
 
 == Changelog ==
+
+= 1.0.1 - 2022-02-14 =
+* Bumped minimum required WordPress version to 5.8.
+* Pass component to `renderAppender`.
 
 = 1.0.0 - 2021-02-05 =
 * Initial release.
