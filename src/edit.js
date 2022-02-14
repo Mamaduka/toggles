@@ -75,9 +75,7 @@ export default function TogglesEdit( {
 				</summary>
 				<div className="wp-block-toggles__content">
 					<InnerBlocks
-						renderAppender={ () => (
-							<InnerBlocks.ButtonBlockAppender />
-						) }
+						renderAppender={ InnerBlocks.ButtonBlockAppender }
 					/>
 				</div>
 			</details>
