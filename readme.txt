@@ -1,8 +1,8 @@
 === Toggles ===
 Contributors: mamaduka
-Tags: accordion, faq, details, block editor, gutenberg
-Requires at least: 5.6
-Tested up to: 5.6
+Tags: accordion, faq, details, block, blocks
+Requires at least: 5.8
+Tested up to: 5.9
 Stable tag: 1.0.0
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -48,5 +48,5 @@ Create an issue at the [Mamaduka/toggles](https://github.com/Mamaduka/toggles) r
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.0 - 2021-02-05 =
 * Initial release.
