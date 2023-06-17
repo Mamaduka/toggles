@@ -59,6 +59,7 @@ export default function TogglesEdit( {
 			</InspectorControls>
 
 			<details { ...blockProps }>
+				{ /* eslint-disable-next-line jsx-a11y/no-static-element-interactions */ }
 				<summary
 					onKeyUp={ catchKeyUpEvent }
 					onClick={ catchClickEvent }
