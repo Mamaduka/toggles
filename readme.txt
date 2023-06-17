@@ -51,6 +51,7 @@ Create an issue at the [Mamaduka/toggles](https://github.com/Mamaduka/toggles) r
 = 1.1.0 - 2023-06-17 =
 * Bumped minimum required WordPress version to 6.1.
 * Fixes an error when selecting deeply nested inner blocks.
+* Block support enhancements.
 
 = 1.0.1 - 2022-02-14 =
 * Bumped minimum required WordPress version to 5.8.
