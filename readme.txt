@@ -1,9 +1,9 @@
 === Toggles ===
 Contributors: mamaduka
 Tags: accordion, faq, details, block, blocks
-Requires at least: 5.8
-Tested up to: 5.9
-Stable tag: 1.0.1
+Requires at least: 6.1
+Tested up to: 6.2
+Stable tag: 1.1.0
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -47,6 +47,10 @@ Create an issue at the [Mamaduka/toggles](https://github.com/Mamaduka/toggles) r
 3. Block Editor.
 
 == Changelog ==
+
+= 1.1.0 - 2023-06-17 =
+* Bumped minimum required WordPress version to 6.1.
+* Fixes an error when selecting deeply nested inner blocks.
 
 = 1.0.1 - 2022-02-14 =
 * Bumped minimum required WordPress version to 5.8.
