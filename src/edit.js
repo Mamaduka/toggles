@@ -21,7 +21,7 @@ export default function TogglesEdit( {
 } ) {
 	const isInnerBlockSelected = useSelect(
 		( select ) =>
-			select( 'core/block-editor' ).hasSelectedInnerBlock( clientId ),
+			select( 'core/block-editor' ).hasSelectedInnerBlock( clientId, /* deep */ true ),
 		[ clientId ]
 	);
 
@@ -45,7 +45,6 @@ export default function TogglesEdit( {
 	return (
 		<>
 			<BlockControls />
-
 			<InspectorControls>
 				<PanelBody title={ __( 'Settings', 'toggles' ) }>
 					<ToggleControl
@@ -69,7 +68,6 @@ export default function TogglesEdit( {
 						value={ attributes.summary }
 						onChange={ ( summary ) => setAttributes( { summary } ) }
 						placeholder={ __( 'Write a title…', 'toggles' ) }
-						keepPlaceholderOnFocus
 						allowedFormats={ [ 'core/bold', 'core/italic' ] }
 						aria-label={ __( 'Toggle title', 'toggles' ) }
 					/>
