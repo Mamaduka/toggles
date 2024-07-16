@@ -3,8 +3,8 @@
  * Plugin Name:       Toggles
  * Plugin URI:        https://github.com/Mamaduka/toggles
  * Description:       An easy way to hide and reveal content.
- * Version:           1.1.0
- * Requires at least: 6.1
+ * Version:           1.1.1
+ * Requires at least: 6.4
  * Requires PHP:      5.6
  * Author:            George Mamadashvili
  * Author URI:        https://mamaduka.com/
