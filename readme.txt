@@ -1,10 +1,10 @@
 === Toggles ===
 Contributors: mamaduka
 Tags: accordion, faq, details, block, blocks
-Requires at least: 6.1
-Tested up to: 6.2
-Stable tag: 1.1.0
-Requires PHP: 5.6
+Requires at least: 6.9
+Tested up to: 7.0
+Stable tag: 1.2.0
+Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -47,6 +47,14 @@ Create an issue at the [Mamaduka/toggles](https://github.com/Mamaduka/toggles) r
 3. Block Editor.
 
 == Changelog ==
+
+= 1.2.0 – 2026-07-04 =
+* Update the Block API version to 3.
+* Bumped minimum required WordPress version to 6.9.
+* Update the minimum required PHP version to 7.4.
+
+= 1.1.1 – 2024-07-16 =
+* Bumped minimum required WordPress version to 6.4.
 
 = 1.1.0 - 2023-06-17 =
 * Bumped minimum required WordPress version to 6.1.
