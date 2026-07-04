@@ -64,12 +64,13 @@ export default function TogglesEdit( {
 					onClick={ catchClickEvent }
 				>
 					<RichText
+						identifier="summary"
 						tagName="span"
 						value={ attributes.summary }
 						onChange={ ( summary ) => setAttributes( { summary } ) }
 						placeholder={ __( 'Write a title…', 'toggles' ) }
-						allowedFormats={ [ 'core/bold', 'core/italic' ] }
 						aria-label={ __( 'Toggle title', 'toggles' ) }
+						withoutInteractiveFormatting
 					/>
 				</summary>
 				<div className="wp-block-toggles__content">
